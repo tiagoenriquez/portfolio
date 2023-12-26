@@ -1,0 +1,57 @@
+Banco de dados:
+
+projetos:
+  id
+  nome
+  descrição
+  url
+  repositório
+  url da imagem
+
+credenciais:
+  login
+  senha
+
+Páginas:
+
+Página principal (incompleta)
+  - Lista de projetos
+  - Acessa a página de cada projeto
+  
+Projeto
+  - Cada projeto terá página própria na qual serão exibidas informações sobre ele
+  - Acessa seu endereço eletrônico
+  - Acessa seu repositório
+
+Cadastro de Credenciais (disponível se não houver  informação de credenciais) (implementado)
+  - Cadastra credenciais e retorna a página principal
+  
+Menu (requer login) (implementado)
+  - Acessa página de cadastro de projeto
+  - Acessa página de edição de credenciais
+  - Desloga redirecionando para a página principal
+
+Edição de Credenciais (requer login)
+  - Atualiza dados de credenciais e rediciona para a página de Lista de Projetos
+
+Cadastro de projetos (requer login) (implementado)
+  - Acessa o menu
+  - Insere um projeto novo e rediciona para a página de Lista de Projetos
+  
+Lista de projeto (requer login) (implementado)
+  - Lista projetos
+  - Exibe menu
+  - Acessa página de edição de projeto através da lista
+  - Acessa página de remoção de projeto através da lista
+
+Edição de projeto (requer login) (implementado)
+  - Acessa o menu
+  - Atualiza dados do projeto e redireciona para a página de Lista de Projetos
+
+Remoção de projeto (requer login) (implementado)
+  - Acessa o menu
+  - Desiste da exclusão do projeto e redireciona para a página de Lista de Projetos
+  - Exclui o projeto e redireciona para a página de Lista de Projetos
+
+Login (disponível se houver informação de credenciais) (implementado)
+  - Loga o dono dos projetos no sistema redirecionando para a página de lista de projetos
