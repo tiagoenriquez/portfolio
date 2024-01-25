@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "Running composer"
-composer self-update
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
+composer self-update
 
 echo "Clearing caches..."
 php artisan optimize:clear
