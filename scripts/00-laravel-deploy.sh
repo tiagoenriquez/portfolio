@@ -2,7 +2,7 @@
 composer self-update
 echo "Running composer"
 composer global require hirak/prestissimo
-composer install
+composer install --no-dev --working-dir=/var/www/html
 composer validate
 
 echo "Clearing caches..."
