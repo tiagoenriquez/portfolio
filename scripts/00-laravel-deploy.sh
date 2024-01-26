@@ -2,7 +2,7 @@
 echo "Running composer"
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
-php composer.phar install
+sh -c "compose install"
 composer validate
 
 echo "Clearing caches..."
