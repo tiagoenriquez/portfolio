@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
+compose self-update
 echo "Running composer"
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
-sh -c "compose install"
 composer validate
 
 echo "Clearing caches..."
